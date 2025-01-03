@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Variables */
+
+:root {
+    --COLOR_GREEN: rgb(49, 222, 121);
+    --COLOR_GREY: #A2A2A2;
+    --COLOR_BLACK: black;
+    --COLOR_WHITE: white;
+    --FONT_FAM: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --DEFAULT_FONT: 1.2rem;
+    --LARGE_FONT: 3rem;
+    --MEDIUM_FONT: 2rem;
+    --SMALL_FONT: 1.5rem;
+    --TINY_FONT: 0.9rem;
+    --transition: all 0.3s linear;
+}
+
+/* Containers */
+
+/* .sticky {
+  background: red;
+  box-shadow: 0 4px 8px rgba(0, 0, 0,);
+  transition: 0.1s;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+} */
+
+.navbar {
+    width: 100%;
+    padding: 10px 0;
+    height: auto;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+}
+
+.wrapper {
+    width: 100%;
+    height: auto;
+}
+
+.navbar .wrapper .container {
+    width: 100%;
+}
+
+.homelogo {
+    width: 100%;
+    height: auto;
+    padding-left: 8.4%;
+    position: relative;
+}
+
+.navbar .logo {
+    font-size: var(--MEDIUM_FONT);
+    color: var(--COLOR_BLACK);
+    text-decoration: none;
+    font-weight: 500;
+    position: absolute;
+    top: 20px;
+}
+
+.navbar .logo span {
+    color: var(--COLOR_GREEN);
+}
+
+.nav-toggle {
+    font-size: 2rem;
+    color: var(--clr-primary-5);
+    background: transparent;
+    border-color: transparent;
+    transition: var(--transition);
+    cursor: pointer;
+    display: none;
+}
+
+.navlisttrans {
+    transition: all 0.9s ease-in-out;
+}
+
+/* nav links */
+
+.navlist {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.navlist ul {
+    display: flex;
+    padding: 0 0 0 41%;
+    flex-wrap: nowrap;
+    height: auto;
+    column-gap: 40px;
+    position: absolute;
+    top: 25px;
+}
+
+.navlist li {
+    list-style-type: none;
+}
+
+.navlist li a {
+    text-decoration: none;
+}
+
+.navlist li a span {
+    color: var(--COLOR_BLACK);
+    font-size: var(--DEFAULT_FONT);
+    font-weight: 400;
+}
+
+.links li a span:hover {
+    border-bottom: 2px solid var(--COLOR_GREEN);
+}
+
+.sticky {
+    width: 100%;
+    height: 15%;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+}
