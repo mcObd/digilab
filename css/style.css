@@ -23,6 +23,59 @@
     --SMALL_FONT: 1.5rem;
     --TINY_FONT: 0.9rem;
     --transition: all 0.3s linear;
+    --COLOR_PURPLE: rgb(89, 40, 229);
+    --COLOR_BLUE: #007bff;
+    --COLOR_GREY: #6c757d;
+    --COLOR_BLACK: #000;
+    --COLOR_WHITE: #fff;
+    --FONT_FAM: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    --DEFAULT_FONT: 1.2rem;
+    --BIG_FONT: 5rem;
+    --LARGE_FONT: 3rem;
+    --MEDIUM_FONT: 2rem;
+    --SMALL_FONT: 1.5rem;
+    --TINY_FONT: 0.9rem;
+    --h1size: 50px;
+    --h2size: 40px;
+    --h3size: 24px;
+    --h4size: 20px;
+    --h5size: 18px;
+    --h6size: 16px;
+    --bodysize: 16px;
+    --h1height: 58px;
+    --h2height: 48px;
+    --h3height: 32px;
+    --h4height: 28px;
+    --h5height: 26px;
+    --h6height: 26px;
+    --bodyheight: 26px;
+    --pfamily: 'Rubik', sans-serif;
+    --red: #ff3838;
+    --gray: #777777;
+    --text: #555555;
+    --blue: #1494a9;
+    --white: #ffffff;
+    --chalk: #f5f5f5;
+    --green: #11b76b;
+    --purple: #b12fad;
+    --orange: #e86121;
+    --yellow: #ffab10;
+    --body: #f5f6f7;
+    --border: #e8e8e8;
+    --heading: #39404a;
+    --primary: #119744;
+    --sub-heading: #565765;
+    --green-chalk: #ddffd5;
+    --green-dark: #072f17;
+    --gray-chalk: #cccccc;
+    --intro-bg: #f8fffa;
+    --facebook: #3b5998;
+    --linkedin: #0e76a8;
+    --twitter: #00acee;
+    --google: #E60023;
+    --instagram: #F77737;
+    --primary-bshadow: 0px 15px 35px 0px rgba(0, 0, 0, 0.1);
+    --primary-tshadow: 2px 3px 8px rgba(0, 0, 0, 0.1);
 }
 
 @keyframes fade-in {
@@ -940,6 +993,10 @@ body {
     width: 90%;
     text-align: center;
 }
+.text9 p a {
+    text-decoration: none;
+    color: var(--COLOR_WHITE);
+}
 
 .contactsign {
     width: 95%;
@@ -974,6 +1031,7 @@ body {
 
 .formitem:nth-of-type(4)>.formcon {
     height: 150px;
+    padding-top: 15px;
 }
 
 .message form button {
@@ -982,7 +1040,7 @@ body {
 
 .message form .mbutton {
     margin-right: 40%;
-    padding: 0 5px 0 5px ;
+    padding: 10px 5px 0 5px ;
 }
 
 /* FOOTER SECTION */
@@ -1078,3 +1136,197 @@ body {
 .copyright p {
     color: #999999;
 }
+
+/*========================================
+            USER-FORM PAGE STYLE
+=========================================*/
+
+.user-form-part {
+    padding-top: 30px;
+    width: 100%;
+  }
+  
+  .user-form-logo {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  .user-form-logo img {
+    width: 200px;
+  }
+  
+  .user-form-card {
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background: var(--white);
+    border: 1px solid var(--border);
+  }
+  
+  .user-form-title {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 50px;
+  }
+  
+  .user-form-title h2 {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 5px;
+    color: var(--COLOR_GREEN);
+  }
+  
+  .user-form-title p {
+    text-transform: capitalize;
+  }
+  
+  .user-form-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: block;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  
+  .user-form-social {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .user-form-social li {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .user-form-social li a {
+    width: 60%;
+    height: 70px;
+    font-size: 15px;
+    padding: 10px 0px;
+    border-radius: 10px;
+    letter-spacing: 0.3px;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--white);
+    background: var(--primary);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+  }
+  
+  .user-form-social li a i {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  .user-form-social li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    width: 60%;
+    height: 70px;
+    font-size: 15px;
+    padding: 10px 0px;
+    border-radius: 10px;
+    letter-spacing: 0.3px;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--white);
+    text-decoration: none;
+  }
+  
+  .user-form-social li a.instagram {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+  }
+  
+  .user-form-social li a.tiktok {
+    background: linear-gradient(45deg, #000000, #ffffff);
+  }
+  
+  .user-form-social li a.linkedin {
+    background-color: #0077b5;
+  }
+  
+  .user-form-social li a.whatsapp {
+    background-color: #25d366;
+  }
+  
+  .user-form-social li a.email {
+    background-color: #ea4335;
+  }
+  
+  .user-form-social li a.github {
+    background-color: #333;
+  }
+  
+  
+  
+  .user-form-divider {
+    width: 100%;
+    height: 1px;
+    margin: 50px 0px;
+    background: var(--border);
+    position: relative;
+    z-index: 1;
+  }
+  
+  .user-form-divider p {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 auto;
+    font-style: italic;
+    line-height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    color: var(--gray);
+    background: var(--white);
+    border: 1px solid var(--border);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+  
+  @media (max-width: 575px) {
+    .user-form-card {
+        padding: 20px;
+    }
+    .user-form-social li a {
+      flex-wrap: nowrap;
+      width: 70%;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .user-form-group {
+        display: inherit;
+    }
+    .user-form-divider {
+        width: 100%;
+        height: 1px;
+        margin: 50px 0px;
+    }
+  }
+  
+  
