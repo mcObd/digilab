@@ -111,7 +111,7 @@
     .navbar .nav-toggle {
         display: flex;
         align-items: center;
-        color: var(--COLOR_WHITE);
+        color: var(--COLOR_GREEN);
         gap: 2vw;
     }
 
