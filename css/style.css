@@ -925,14 +925,22 @@ body {
 }
 
 .header9 p {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
     color: var(--COLOR_GREY);
     padding-top: 2%;
     font-weight: 400;
     word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: center;
+    max-width: 100%;
+    padding: 0 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .header9 p {
+        width: 90%;
+        margin: 0 auto;
+    }
 }
 
 .contactwrap {
