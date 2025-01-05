@@ -932,6 +932,7 @@ body {
     color: var(--COLOR_GREY);
     padding-top: 2%;
     font-weight: 400;
+    word-wrap: break-word;
 }
 
 .contactwrap {
