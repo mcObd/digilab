@@ -1286,6 +1286,13 @@ body {
   .user-form-social li a.github {
     background-color: #333;
   }
+  .user-form-social li a.paystack {
+    background-color: lightblue;
+  }
+  
+  .user-form-social li a.projectf {
+    background-color: darkslateblue;
+  }
   
   
   
